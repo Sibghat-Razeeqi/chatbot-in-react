@@ -91,12 +91,12 @@
 }
 
 .user-message {
-  background-color: #7289da;
+  background-color: #444444;
   align-self: flex-end;
 }
 
 .bot-message {
-  background-color: #99aab5;
+  /* background-color: #99aab5; */
   align-self: flex-start;
 }
 

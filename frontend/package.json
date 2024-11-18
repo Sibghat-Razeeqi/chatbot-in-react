@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
+    "cross-env": "^7.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",
@@ -16,7 +17,7 @@
   },
   "scripts": {
     "start": "concurrently \"npm run start-react\" \"npm run start-backend\"",
-    "start-react": "react-scripts start",
+    "start-react": "cross-env PORT=3001 react-scripts start",
     "start-backend": "cd ../backend && uvicorn app:app --reload"
   },
   "eslintConfig": {
